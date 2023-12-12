@@ -1,0 +1,21 @@
+<div>
+  <mat-toolbar color="primary" class="navbar">
+    <span class="navbar-brand">All Products</span>
+    <span class="spacer"></span>
+  </mat-toolbar>
+</div>
+
+
+<div class="card-container">
+  <mat-card *ngFor="let product of products" class="custom-card">
+    <img mat-card-image src="{{ product.image }}" alt="Photo" style="width: auto; height: 200px; object-fit: cover;">
+    <mat-card-content>
+      <h1 class="custom-title">{{ product.title }}</h1>
+    </mat-card-content>
+    <mat-card-actions>
+      <button (click)="increaseLikes(product.admin_id)" mat-stroked-button color="warn"
+        class="custom-like-button">LIKE</button>
+      <p class="custom-likes">{{ product.likes }} Likes</p>
+    </mat-card-actions>
+  </mat-card>
+</div>
