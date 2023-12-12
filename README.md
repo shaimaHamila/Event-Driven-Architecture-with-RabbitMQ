@@ -83,3 +83,17 @@ npm start
 
 Client: http://localhost:8002
 Admin: http://localhost:8001
+
+## RabbitMQ Configuration
+
+This project utilizes RabbitMQ for implementing an Event-Driven Architecture. To set up RabbitMQ for your local development environment, follow these steps:
+
+1. Sign up for a CloudAMQP account: [https://www.cloudamqp.com/](https://www.cloudamqp.com/)
+
+2. Create a new RabbitMQ instance within your CloudAMQP dashboard.
+
+3. Retrieve the connection details (URL) and API key from your RabbitMQ instance.
+
+4. Replace the RabbitMQ connection details in the relevant parts of the project code:
+   - [client-backend/src/app.ts](client-backend/src/app.ts)
+   - [admin-backend/src/index.ts](admin-backend/src/index.ts)
