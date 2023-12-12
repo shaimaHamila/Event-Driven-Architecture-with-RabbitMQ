@@ -37,7 +37,7 @@ amqp.connect('amqps://xfsopmhv:mBormtTydv1NCWXIcg1RLCryA_hEdped@octopus.rmq3.clo
         const app: Application = express();
         const port = process.env.PORT || 8002;
         app.use(express.json());
-        //This app will run on port 8000 but the frontend aps will have different ports,chrom will prevent this request(coz different ports), so we added cors to make sure that oure frontend will communicate with node
+        //This app will run on port 8002 but the frontend aps will have different ports,chrom will prevent this request(coz different ports), so we added cors to make sure that oure frontend will communicate with node
         app.use(cors({
             origin: ['http://localhost:3000', 'http://localhost:8082', 'http://localhost:4200']
         }))

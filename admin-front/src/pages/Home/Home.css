@@ -1,0 +1,22 @@
+.table-container {
+  padding: 0rem 0rem 3rem 0rem;
+}
+
+h4 {
+  margin: 2rem 0rem 1rem;
+}
+
+.table-image {
+  td,
+  th {
+    vertical-align: middle;
+  }
+}
+.my-img {
+  width: 60px;
+  height: 50px;
+  object-fit: cover;
+}
+.title_product {
+  margin-top: 90px;
+}
